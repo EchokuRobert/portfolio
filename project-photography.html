@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Photography</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #666666;
+        }
+
+        body {
+          background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+          background-attachment: fixed;
+           color: #e0e0e0;
+        }
+
+        header {
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+
+        h1 { 
+          color: #c5a059; /* Muted Gold */
+          font-family: "Playfair Display", serif; /* Highly recommended for this color */
+         letter-spacing: 0.15em;
+         text-transform: uppercase;
+         text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+       }
+
+        /* The Magic: CSS Grid */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            grid-auto-flow: dense;
+        }
+
+        .gallery-item {
+           border: 1px solid rgba(255, 255, 255, 0.1);
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .gallery-item:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+
+        /* Dynamic layout for variety */
+        .gallery-item.wide { grid-column: span 2; }
+        .gallery-item.tall { grid-row: span 2; }
+
+        @media (max-width: 600px) {
+            .gallery-item.wide { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← Back to Projects</a>
+        <h1>Photography</h1>
+        <p>The power of the lens in capturing life's fleetings moments</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/becky.JPG" alt="Project detail 1">
+        </div>
+        <div class="gallery-item tall">
+            <img src="images/kasumba.JPG" alt="Project detail 2">
+        </div>
+        <div class="gallery-item wide">
+            <img src="images/latimar.JPG" alt="Project detail 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/fun2.JPG" alt="Project detail 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/nbs.JPG" alt="Project detail 5">
+        </div>
+         <div class="gallery-item">
+            <img src="images/rochelle.JPG" alt="Project detail 5">
+        </div>
+         <div class="gallery-item">
+            <img src="images/sports.JPG" alt="Project detail 5">
+        </div>
+        </main>
+
+</body>
+</html>

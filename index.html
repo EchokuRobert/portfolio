@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHOKU ROBERT - Personal Portfolio</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS - MUST be linked AFTER Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#home">ECHOKU ROBERT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">AboutMe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">ContactMe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="d-flex align-items-center">
+            <div class="container text-center">
+                <h1 class="display-3">I'm Echoku Robert</h1>
+                <p class="lead my-4">A Web Developer| Network Developer |Blogger |Photograper.</p>
+                <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">About Me</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                        <img src="images/try.jpg" class="img-fluid rounded-circle" alt="A professional photo or avatar of yourself">
+                    </div>
+                    <div class="col-lg-8">
+                        <p>I am a multidisciplinary developer and creator with a passion for connecting the dots between robust infrastructure and compelling visual stories.<br>
+                            With a background spanning Website and Mobile App Development, I build seamless, user-centric digital products from the ground up. <br.
+                            My technical foundation is rooted in Network Administration, ensuring that everything I build is secure, scalable, and efficient. But I don’t just stop at the code—I’m also a Blogger and Photographer, dedicated to crafting the narratives and imagery that give digital spaces their soul. Whether I’m configuring a server or capturing a high-resolution landscape, my goal is the same: creating impact through precision and creativity..</p>
+                        <h3 class="mt-4">My Skills</h3>
+                        <div class="skills-list">
+                            <span class="badge">MobileApp Development</span>
+                            <span class="badge">Website Development</span>
+                            <span class="badge">Database Design</span>
+                            <span class="badge">Networks-Corporate Outdoor/Indoor </span>
+                            <span class="badge">Inspirational Blogging</span>
+                            <span class="badge">Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects/Work Section -->
+        <section id="projects" class="py-5 bg-light-custom">
+            <div class="container">
+                <h2 class="text-center mb-5">My Projects</h2>
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/health.webp" class="card-img-top" alt="Screenshot or graphic for Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">VitalTrack Health Application</h5>
+                                <p class="card-text">Project Title: Health Application <br></p>
+                                <a href="project-health.html" class="btn btn-primary">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/networks.png" class="card-img-top" alt="Screenshot or graphic for Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Network Configurations</h5>
+                                <p class="card-text">Project Title: Corporate Outdoor/Indoor setup</p>
+                                <a href="project-network.html" class="btn btn-primary">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="images/ndejje.JPG" class="card-img-top" alt="Screenshot or graphic for Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Photography</h5>
+                                <p class="card-text">Project Title:Through the Lens</p>
+                                <a href="project-photography.html" class="btn btn-primary">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Contact Me</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 ECHOKU ROBERT. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/EchokuRobert" target="_blank" style="font-size: 30px; color: #0077b5; text-decoration: none;"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/echokurobert" target="_blank" style="font-size: 30px; color: #0077b5; text-decoration: none;">
+                 <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://pearlcreatives.blogspot.com" style="font-size: 24px; color: #ff5722;">
+               <i class="fa-brands fa-blogger"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
